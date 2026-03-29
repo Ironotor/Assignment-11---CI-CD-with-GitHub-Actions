@@ -1,10 +1,10 @@
-name: test output
+name: Hello World
 on: [push]
 jobs:
-  test_case_1:
-    name: test case 1
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v4
-    - name: Run a script
-    run: echo "Hello, World!"
+output_hello_world:
+name: Output Hello World
+runs-on: ubuntu-latest
+steps:
+- uses: actions/checkout@v4
+- name: Run a script
+run: echo "Hello, World!"
