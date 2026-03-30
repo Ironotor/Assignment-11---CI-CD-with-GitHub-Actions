@@ -2,7 +2,7 @@ name: Automated Test
 on: [push]
 jobs:
   automated_test_1:
-    name: Automated Test 1
+    name: Automated Test 1 - 10 numbers
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -15,7 +15,7 @@ jobs:
       - name: Compare expected output to actual
         run: diff test_data/test1_expected.txt test_data/test1_actual1.txt
   automated_test_2:
-    name: Automated Test 2
+    name: Automated Test 2 - no numbers
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -28,7 +28,7 @@ jobs:
       - name: Compare expected output to actual
         run: diff test_data/test2_expected.txt test_data/test2_actual1.txt
   automated_test_3:
-    name: Automated Test 3
+    name: Automated Test 3 - 1 number
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
