@@ -14,3 +14,7 @@ jobs:
         run: python find_lowest_number.py test_data/test1_input.txt test_data/test1_actual1.txt
       - name: Compare expected output to actual
         run: diff test_data/test1_expected.txt test_data/test1_actual1.txt
+        run: echo actual
+        run: cat test_data/test1_actual1.txt
+        run: echo expected
+        run: cat test_data/test1_expected.txt
