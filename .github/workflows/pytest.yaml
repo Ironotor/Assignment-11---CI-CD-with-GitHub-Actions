@@ -13,4 +13,4 @@ jobs:
       - name: Produce actual output
         run: python find_lowest_number.py test_data/test1_input.txt test_data/test1_actual1.txt
       - name: Compare expected output to actual
-        run: test_data/diff test1_expected.txt test_data/test1_actual1.txt
+        run: diff test_data/test1_expected.txt test_data/test1_actual1.txt
