@@ -1,12 +1,13 @@
-on:
+name: Echo Example
+on: 
   schedule:
-    - cron: '* * * * *'
+    - cron: '0 22 * * *'
   workflow_dispatch:
 jobs:
-  automated_test_1:
-    name: Automated Test 1
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - name: output debug
-      run: echo test
+  show-info:
+  runs-on: ubuntu-latest
+  steps:
+    - name: Show repository info
+    run:
+      echo $(date +'%Y-%m-%d')
+
