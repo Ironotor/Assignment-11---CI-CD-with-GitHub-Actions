@@ -4,8 +4,7 @@ on:
     - cron: '0 22 * * *'
   workflow_dispatch:
 jobs:
-  show-info:
-    runs-on: ubuntu-latest
+  runs-on: ubuntu-latest
   steps:
   - name: Show repository info
     run:
