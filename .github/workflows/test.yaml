@@ -1,5 +1,6 @@
 name: Echo time
 on: 
+  workflow_dispatch:
   push: 
   schedule: 
     - cron: "* * * * *"
@@ -9,5 +10,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Show repository info
-        run: echo $(date +'%Y-%m-%d')
+        run: echo $(date)
 
