@@ -1,11 +1,11 @@
-name: Echo Example
+name: Echo time
 on: 
   schedule:
     - cron: '0 22 * * *'
   workflow_dispatch:
 jobs:
-  build:
-    name: Example
+  automated_test_1:
+    name: Echo time
     runs-on: ubuntu-latest
     steps:
     - name: Show repository info
