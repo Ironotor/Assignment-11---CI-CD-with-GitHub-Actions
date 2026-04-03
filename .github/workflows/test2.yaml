@@ -1,0 +1,12 @@
+name: Echo time
+on: 
+  schedule: 
+    - cron: "* * * * *"
+  workflow_dispatch:
+jobs:
+  automated_test_1:
+    name: Echo time
+    runs-on: ubuntu-latest
+    steps:
+      - name: Show repository info
+        run: echo $(date)
