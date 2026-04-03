@@ -7,7 +7,7 @@ jobs:
   show-info:
   runs-on: ubuntu-latest
   steps:
-    - name: Show repository info
+  - name: Show repository info
     run:
       echo $(date +'%Y-%m-%d')
 
