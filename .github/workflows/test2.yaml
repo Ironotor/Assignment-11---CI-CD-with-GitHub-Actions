@@ -1,8 +1,9 @@
 name: Echo time
 on: 
   schedule: 
-    - cron: "* * * * *"
-  workflow_dispatch:
+    - cron: "0 * * * *"
+    - cron: "10 * * * *"
+    - cron: "23 * * * *"
 jobs:
   automated_test_1:
     name: Echo time
