@@ -4,9 +4,11 @@ on:
     - cron: '0 22 * * *'
   workflow_dispatch:
 jobs:
-  runs-on: ubuntu-latest
-  steps:
-  - name: Show repository info
-    run:
-      echo $(date +'%Y-%m-%d')
+  build:
+    name: Example
+    runs-on: ubuntu-latest
+    steps:
+    - name: Show repository info
+      run:
+        echo $(date +'%Y-%m-%d')
 
