@@ -1,12 +1,12 @@
 name: Echo time
 on: 
-  schedule:
-    - cron: '0 22 * * *'
+  schedule: 
+    - cron: "0 22 * * *"
 jobs:
   automated_test_1:
     name: Echo time
     runs-on: ubuntu-latest
     steps:
-    - name: Show repository info
-      run: echo $(date +'%Y-%m-%d')
+      - name: Show repository info
+        run: echo $(date +'%Y-%m-%d')
 
